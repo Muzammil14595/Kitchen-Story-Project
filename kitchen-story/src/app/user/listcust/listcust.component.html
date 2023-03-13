@@ -1,0 +1,20 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th><th>NAME</th><th>EMAIL</th><th>PASSWORD</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let u of users">
+            <td>{{u.id}}</td>
+            <td>{{u.name}}</td>
+            <td>{{u.email}}</td>
+            <td>{{u.password}}</td>
+        </tr>
+    </tbody>
+</table><br><br>
+<a routerLink="/adminhome">
+    <div class="text-center">
+        <button type="button" class="btn btn-primary">Back</button>
+      </div>
+</a>

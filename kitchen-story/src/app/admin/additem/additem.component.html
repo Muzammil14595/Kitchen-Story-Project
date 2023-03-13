@@ -1,0 +1,22 @@
+<div class="container">
+    <h3>Add item</h3>
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" name="name" id="name"
+                placeholder="Enter name" class="form-control"
+                [(ngModel)]="item.name">
+        </div>
+        <div class="form-group">
+            <label>Price</label>
+            <input type="text" name="price" id="price"
+                placeholder="Enter Price" class="form-control"
+                [(ngModel)]="item.price">
+        </div>
+        <button class="btn btn-success">Add</button><br><br>
+        <a routerLink="/adminhome">
+            <button class="btn btn-outline-primary">Back</button><br><br>
+        </a>
+    </form>
+
+</div>

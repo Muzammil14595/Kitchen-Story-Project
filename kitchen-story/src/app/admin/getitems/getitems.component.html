@@ -1,0 +1,25 @@
+<div class="container">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th><th>NAME</th><th>PRICE(in INR)</th><th>OPERATIONS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let i of items">
+                <td>{{i.id}}</td>
+                <td>{{i.name}}</td>
+                <td>{{i.price}}</td>
+                <td>
+                    <a routerLink="/delitem/{{i.id}}">
+                        <button class="btn btn-danger">Delete</button>
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <a routerLink="/adminhome">
+        <button class="btn btn-outline-primary">Back</button><br>
+    </a>
+    
+</div>

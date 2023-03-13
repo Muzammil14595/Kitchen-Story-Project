@@ -1,0 +1,62 @@
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Kitchen Story</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarNav" aria-controls="navbarNav"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="adduser">Register</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="login">User Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="adminlogin">Admin Login</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<router-outlet></router-outlet>
+
+<div id="carouselExampleFade" class="carousel slide carousel-fade"
+  data-bs-ride="carousel">
+
+  <div class="carousel-inner">
+
+    <div class="carousel-item active">
+
+      <img
+        src="https://www.teahub.io/photos/full/253-2538486_slider3-restaurant-food-pic-hd.jpg" class="d-block vh-25 vw-25"
+        alt="...">
+    </div>
+    <div class="carousel-item">
+      <img
+        src="https://wallpapersmug.com/download/1600x900/ddcbbf/food-pizza-baking.jpg"
+        class="d-block vh-25 vw-25" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img
+        src="https://wallpapersmug.com/download/1600x900/ebde76/delicious-pizza-food.jpg"
+        class="d-block vh-25 vw-25" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button"
+    data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button"
+    data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
